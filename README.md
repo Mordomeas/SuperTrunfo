@@ -1,0 +1,2 @@
+# SuperTrunfo
+SuperTrunfo Estácio
