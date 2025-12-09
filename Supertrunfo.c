@@ -9,6 +9,8 @@ int main () {
     float areaDaCidade;
     float pib;
     int pontosTuristicos;
+    float densidadePopulacional;
+    float rendaPerCapita;
 
     char estado1[50];
     char codigoCidade1[50];
@@ -17,8 +19,10 @@ int main () {
     float areaDaCidade1;
     float pib1;
     int pontosTuristicos1;
+    float densidadePopulacional1;
+    float rendaPerCapita1;
 
-
+    
    //Carta 1
 
    printf("Primeira carta \n");
@@ -69,12 +73,18 @@ int main () {
     printf("Digite o numero dos pontos turisticos: \n");
     scanf("%d", &pontosTuristicos1);
 
+    densidadePopulacional = populacao / areaDaCidade;
+    densidadePopulacional1 = populacao1 / areaDaCidade1;
+
+    rendaPerCapita = pib / populacao;
+    rendaPerCapita1 = pib1 / populacao1;
+
     //Resultado Carta 1
-    printf("\n Primeira Carta: \n O Estado é: %s\n - O Codigo é: %s\n - Nome da Cidade é: %s\n - A area é: %f\n - A população é: %d\n - o Pib é: %f\n - Os pontos turisticos sao: %d\n", 
-        estado, codigoCidade, nomeDaCidade, areaDaCidade, populacao,  pib, pontosTuristicos);
+    printf("\n Primeira Carta: \n O Estado é: %s\n - O Codigo é: %s\n - Nome da Cidade é: %s\n - A area é: %f\n - A população é: %d\n - o Pib é: %f\n - Os pontos turisticos sao: %d\n - A Densidade Populacional da 1 carte é de: %f\n - A renda Per Capita da 1 carta é de: %f\n",
+        estado, codigoCidade, nomeDaCidade, areaDaCidade, populacao,  pib, pontosTuristicos, densidadePopulacional, rendaPerCapita);
 
     //Resultado Carta 2
-    printf("\n Segunda Carta: \n O Estado é: %s\n - O Codigo é: %s\n - Nome da Cidade é: %s\n - A area é: %f\n - A população é: %d\n - o Pib é: %f\n - Os pontos turisticos sao: %d\n", 
-        estado1, codigoCidade1, nomeDaCidade, areaDaCidade1, populacao1, pib1, pontosTuristicos1);
+    printf("\n Segunda Carta: \n O Estado é: %s\n - O Codigo é: %s\n - Nome da Cidade é: %s\n - A area é: %f\n - A população é: %d\n - o Pib é: %f\n - Os pontos turisticos sao: %d\n - A Densidade Populacional da 2 carta é de: %f\n - A renda Per Capita da 2 carte é de: %f\n",
+        estado1, codigoCidade1, nomeDaCidade, areaDaCidade1, populacao1, pib1, pontosTuristicos1, densidadePopulacional1, rendaPerCapita1);
 
     };
